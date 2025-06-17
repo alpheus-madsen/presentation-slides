@@ -191,3 +191,27 @@ outright emphasis on data *ensures* that this is so -- it is *nonetheless* true 
 *essence* of mathematics is baked into science.  There's no escaping it!  The reliance of
 so much of our science on equations and numbers is a mere artifact of the fact that our
 data collection is *necessarily* numerical.
+
+
+
+An Introduction to Finite Element Analysis
+==========================================
+
+(2025-provo-linux-users-group-intro-to-fea--part-01.pdf)
+(2025-provo-linux-users-group-intro-to-fea--part-02.pdf)
+
+Finite Element Analysis is a method used by engineers to prototype objects without
+physically creating them, to identify potential weak points and other issues in the
+design that might need to be addressed.  This presentation gives a brief introduction
+to Finite Element Analysis, and outlines how geometries are converted into meshes
+that can then provide the pretty pictures and animations that illustrate the physical
+deformations that a particular prototype might go through, when exposed to various
+forces and pressures.
+
+This presentation also briefly touches on both proprietary and open source tools
+available for Finite Element Analysis.
+
+Note that due to size limitations of files uploaded to GitHub, it was necessary to break
+up this presentation into two parts.  These two parts can be reunited into one PDF
+file using the "pdfunite" tool found in the "poppler" PDF utilities package that
+*should* be available in any distribution under a variation of that name.
