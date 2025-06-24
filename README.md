@@ -197,7 +197,7 @@ data collection is *necessarily* numerical.
 An Introduction to Finite Element Analysis
 ==========================================
 
-(2025-provo-linux-users-group-intro-to-fea--part-01.pdf)
+(2025-provo-linux-users-group-intro-to-fea--part-01.pdf)<br>  
 (2025-provo-linux-users-group-intro-to-fea--part-02.pdf)
 
 Finite Element Analysis is a method used by engineers to prototype objects without
@@ -215,3 +215,30 @@ Note that due to size limitations of files uploaded to GitHub, it was necessary 
 up this presentation into two parts.  These two parts can be reunited into one PDF
 file using the "pdfunite" tool found in the "poppler" PDF utilities package that
 *should* be available in any distribution under a variation of that name.
+
+A note (written as a comment in the LaTeX source of the presentation) on how I added
+animations to this PDF:
+```latex
+    %%% TO ANIMATE THINGS:
+    %%%
+    %%%   1. Record something (I use MP4, but there may be room for experimentation)
+    %%%
+    %%%   2. Convert MP4 into a series of PNG files:
+    %%%
+    %%%       FOR GIF:  convert -coalesce <src-file-name>.gif <dst-file-name.png>
+    %%%       FOR MP4:  ffmpeg -i <src-file-name>.mp4 -vf fps=<frames-per-second> <dst-prefix>%04d.png
+    %%%
+    %%%   3. Use something like the following to include the animation in the Beamer Slide Show!
+    %%%
+    %    \begin{frame}{\AboutMe}
+    %        \begin{center}
+    %            \animategraphics[autoplay, loop, width=.75\linewidth]{10}{images/test-animation/out}{1}{203}
+    %        \end{center}
+    %    \end{frame}
+```
+Keep in mind there are almost certainly other ways this can be handled, and that
+perhaps there may even be newer methods of including animation in a LaTeX Beamer
+presentation that weren't available at the time I first created the presentation
+(which I did in November 2023, both because the class was fresh on my mind and I
+didn't know how long I'd have access to my Ansys work, and because I had hoped I
+could be squeezed into a conference happening around that time.)
