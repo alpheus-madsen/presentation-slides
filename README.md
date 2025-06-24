@@ -197,7 +197,7 @@ data collection is *necessarily* numerical.
 An Introduction to Finite Element Analysis
 ==========================================
 
-(2025-provo-linux-users-group-intro-to-fea--part-01.pdf)<br>  
+(2025-provo-linux-users-group-intro-to-fea--part-01.pdf)<br>
 (2025-provo-linux-users-group-intro-to-fea--part-02.pdf)
 
 Finite Element Analysis is a method used by engineers to prototype objects without
